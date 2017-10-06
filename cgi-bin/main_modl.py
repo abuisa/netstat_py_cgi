@@ -35,9 +35,9 @@ def out2list(sf,kode):
 		for l in listku:	
 			if l:
 				if l[0].upper() == 'TCP' or l[0].upper() == 'UDP':
-					pid = l[-1];exe = get_appname(pid);dn = get_dn(l[2])
+					pid = l[-1];exe = get_appname(pid)
 					if any(sf.upper() in el.upper() for el in l) or (sf.upper() in exe.upper()) and sf != '':
-						no +=1;l.insert(0,str(no));l.insert(4,dn);l.insert(len(l),exe);newlistku += [l]
+						dn = get_dn(l[2]);no +=1;l.insert(0,str(no));l.insert(4,dn);l.insert(len(l),exe);newlistku += [l]
 	
 	if kode == False:
 		newlistku = [];no = 0	

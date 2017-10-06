@@ -12,7 +12,7 @@ if srh == None: srh = ':';
 if srh != '':srh = srh
 if hname == 'YES':t =mm.out2list(srh,True)
 if hname == 'NO':t =mm.out2list(srh,False)
-print('<strong> Filter Keyword : '+srh+' | Show Host: '+hname+'</strong>')
+print('Filter Keyword : <b>'+srh+'</b> | Show Host: <b>'+hname+'</b>')
 print('<table border="0">')
 for l in t:
 	print('<tr>')
