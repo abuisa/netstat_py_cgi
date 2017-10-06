@@ -1,0 +1,7 @@
+__pycache__
+cgi-bin/__pycache__/*.pyc
+**/**/*.pyc
+**/*.pyc
+*.bak
+*.tmp
+*.log
