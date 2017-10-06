@@ -33,10 +33,10 @@ tr:nth-child(even) {
 
 
 form = """
-<h2><a href="gto.py?searchbox=&hname=NO">NetStat</a></h2>
-<form name="search" action="gto.py" method="get" border="1">
+<h2><a href="netstat.py?searchbox=&hname=NO">NetStat</a></h2>
+<form name="search" action="netstat.py" method="get" border="1">
 Filter Keyword : <input type="text" name="searchbox">
-<input type="submit" value="Submit">
+<input type="submit" value="GO !">
 <input type="radio" name="hname" value="NO" checked>Hide Host  |
 <input type="radio" name="hname" value="YES">Show Host
 
