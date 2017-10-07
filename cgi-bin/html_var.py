@@ -3,6 +3,8 @@ header = """
 <html>
 <head>
 <title>Python CGI - Netstat</title>
+"""
+css = """
 <style>
 body {
   font-family: "Open Sans", sans-serif;
@@ -28,7 +30,9 @@ tr:nth-child(even) {
     background-color: #eeeeee;
 }
 </style>
-  <script src="jquery-1.10.2.js"></script>
+"""
+jsc = """
+  <!-- <script src="jquery-1.10.2.js"></script> -->
 <script language ="javascript" >
 	var tmp;
 	function f1() {
@@ -45,18 +49,24 @@ tr:nth-child(even) {
 		alert(s)
 	}
 </script>
+"""
+startbody = """
 </head>
+<body onload="f1()">
+<h2><a href="index.py?searchbox=&hname=NO">NetStat</a></h2>
+"""
+startbody1 = """
+</head>
+<body">
 """
 
 form = """
-<body onload="f1()">
-<h2><a href="netstat.py?searchbox=&hname=NO">NetStat</a></h2>
-<form name="search" action="netstat.py" method="get" border="1">
+<form name="search" action="index.py" method="get" border="1">
 Filter Keyword : <input type="text" name="searchbox" value="estab">
 <input type="submit" value="GO !" id="go">
-<input type="radio" name="hname" value="NO" checked>Hide Host  |
-<input type="radio" name="hname" value="YES">Show Host  |
-<input type="checkbox" id="ar" onclick="c()" name="autor"  value="Autorefresh"> Autorefresh
+<input type="radio" name="hname" value="NO">Hide Host  |
+<input type="radio" name="hname" value="YES" checked>Show Host  <!-- |
+<input type="checkbox" id="ar" onclick="c()" name="autor"  value="Autorefresh"> Autorefresh -->
 </form>"""
 
 endbody = "</body></html>"

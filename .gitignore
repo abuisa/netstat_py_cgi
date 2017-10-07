@@ -5,3 +5,6 @@ cgi-bin/__pycache__/*.pyc
 *.bak
 *.tmp
 *.log
+**/opendb.py
+**/*.db
+**/test.py
