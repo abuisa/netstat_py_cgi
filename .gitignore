@@ -8,3 +8,8 @@ cgi-bin/__pycache__/*.pyc
 **/opendb.py
 **/*.db
 **/test.py
+**/a.py
+**/ftovar.py
+**/opencsv.py
+**/tes.txt
+**/verses.csv
